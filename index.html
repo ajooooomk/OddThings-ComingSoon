@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OddThings - Coming Soon</title>
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/png" href="https://www.dropbox.com/scl/fi/68hkq5rbkcuimj0j8el9j/favicon.png?rlkey=e3o943v6zj7jlfornqbz6u3iq&st=vqau84zm&raw=1" />
+
+  <!-- ✅ SEO Meta Tags -->
+  <meta name="description" content="OddThings - A curated collection of high-end furniture, lighting, and home accessories. Coming soon.">
+  <meta name="keywords" content="curated furniture, designer furniture, luxury furniture online, high-end furniture UK, premium home decor, designer lighting, artisanal home accessories, modern luxury interiors, contemporary furniture design, handcrafted furniture UK, unique home accessories, boutique home decor, timeless interior design, Scandinavian furniture, boutique furniture store, statement furniture pieces, modern handcrafted lighting, artisan-crafted furniture">
+  <meta name="author" content="OddThings">
+
+  <!-- Allow indexing now -->
+  <meta name="robots" content="index, follow">
+
+  <!-- ✅ Open Graph (for social sharing) -->
+  <meta property="og:title" content="OddThings - Coming Soon">
+  <meta property="og:description" content="Discover curated furniture, lighting, and home accessories. Each with a story, soul, and sense of place.">
+  <meta property="og:image" content="https://www.dropbox.com/scl/fi/vbklo24ai4deaby99g23g/Logo5.png?rlkey=uzqho19tufzp2ajee7kyvp374&st=tblbigqr&raw=1">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com">
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OddThings - Coming Soon">
+  <meta name="twitter:description" content="Curated high-end furniture, lighting, and home accessories. Launching soon.">
+  <meta name="twitter:image" content="https://www.dropbox.com/scl/fi/vbklo24ai4deaby99g23g/Logo5.png?rlkey=uzqho19tufzp2ajee7kyvp374&st=tblbigqr&raw=1">
+
+<!-- ✅ Google Fonts: Work Sans -->
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #F1EDE5;
+  color: #686663;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+    header {
+      width: 100%;
+      text-align: right;
+      padding: 20px;
+      font-size: 14px;
+    }
+    header a { color: white; text-decoration: underline; }
+
+    .hero {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 40px auto;
+      padding: 0 20px;
+    }
+    .logo {
+      max-width: 450px;
+      margin: 0 auto 20px auto;
+    }
+    .logo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .hero h1 { font-size: 28px; margin: 10px 0; }
+    .hero p { font-size: 16px; margin-bottom: 15px; line-height: 1.6; }
+
+    form {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    form input {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+    form button {
+      padding: 12px 20px;
+      border: none;
+      background: #2C4D9C;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      grid-auto-rows: 180px;
+      gap: 8px;
+      width: 100%;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+    .grid-item {
+      background: #D5C8B8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 14px;
+      font-style: italic;
+      overflow: hidden;
+      border-radius: 0;
+    }
+    .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .wide { grid-column: span 2; }
+    .tall { grid-row: span 2; }
+    .big { grid-column: span 2; grid-row: span 2; }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    footer button {
+      background: #4CAF50;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    footer .social a {
+      margin: 0 10px;
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+    }
+    footer p { font-size: 12px; color: #686663; }
+
+    @media (max-width: 768px) {
+      body { padding: 10px; }
+      .hero { padding: 0 10px; }
+      .hero h1 { font-size: 24px; }
+      .hero p { font-size: 15px; }
+      .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+      }
+      .wide, .tall, .big {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 12px; }
+      .hero h1 { font-size: 22px; }
+      .hero p { font-size: 14px; }
+      .grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+      }
+      .wide, .tall, .big {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+
+  <section class="hero">
+    <div class="logo">
+      <img src="https://www.dropbox.com/scl/fi/bdpupmm5yvm6jg47fwtqg/Logo6.png?rlkey=89p3tnsekis6xep325u3uw9hu&st=xcduffrq&raw=1" alt="OddThings Logo - curated furniture and design">
+    </div>
+    <h1>Coming Soon</h1>
+  
+    <p>
+     <b><u>OddThings</u></b> is where the art of curation meets the joy of discovery.<br><br>
+      Our collections blend <strong>handcrafted interiors</strong>, <strong>modern furniture design</strong>, and <strong>unique home décor</strong> — each piece carefully selected for its story, craftsmanship, and sense of place.<br><br>
+      Think of us as your design accomplice: part tastemaker, part treasure hunter, helping you discover <strong>statement furniture and boutique décor</strong> that transforms a house into a home.
+    </p>
+  </section>
+
+  <section class="grid">
+    <!-- ✅ Add descriptive alt text manually -->
+    <div class="grid-item big"><img src="https://www.dropbox.com/scl/fi/t1m5il6ig8ffnd6oc02o5/GTFY833.jpg?rlkey=w5k0id7ixjik30g2xgla4iyrq&st=e656e11f&raw=1" alt="Luxury designer chair - handcrafted lighting"></div>
+    <div class="grid-item"><img src="https://www.dropbox.com/scl/fi/s487x0snz31qy19wm9ynd/GTFY1476-white-shorn.jpg?rlkey=kx6wxwopz7806arj6mf9u8eqw&st=jfsg85bu&raw=1" alt="Contemporary furniture piece - modern home décor"></div>
+    <div class="grid-item tall"><img src="https://www.dropbox.com/scl/fi/ba3ef0zn9szj8rdfjbw09/GTFY1622-1.jpg?rlkey=mxti7pnxuqb69lz4m8vth3wkm&st=rei3w6t3&raw=1" alt="Curated interior accessory - boutique décor"></div>
+    <div class="grid-item wide"><img src="https://www.dropbox.com/scl/fi/3ccx9owklcwf3fjwhd8dw/GTFY1599-3.jpg?rlkey=j8qfaooy4l69jzmpv8bu7zy8k&st=y1a8kpn0&raw=1" alt="Scandinavian style furniture - timeless interiors"></div>
+    
+    <div class="grid-item"><img src="https://www.dropbox.com/scl/fi/g7wvxn1y4nkiee946iicn/GTFY1414-natural-2.jpg?rlkey=xzlt654zlnz8uyb9o8zxvvdo3&st=fk6ep1li&raw=1" alt="Artisanal crafted lamp - unique home accessory"></div>
+    <div class="grid-item wide"><img src="https://www.dropbox.com/scl/fi/elk4x6hrtfosw9i51o3o6/GTFY305.jpg?rlkey=q61mpqsrxvdb5zdrntbr5lbif&st=wduoo3dg&raw=1" alt="unique hanging lights - luxury furniture collection"></div>
+    <div class="grid-item tall"><img src="https://www.dropbox.com/scl/fi/dj1vrt0dpwbawzd00kxs7/GTFY381.jpg?rlkey=bjgn04a0h79q9u23fbt50enz2&st=g6esb22t&raw=1" alt="modern pendulum clocks- boutique furniture design"></div>
+    <div class="grid-item big"><img src="https://www.dropbox.com/scl/fi/nfq3mfgsb0b3utx1iv8i0/GTFY1247-oak-main.jpg?rlkey=5nj7i2ssvs242c7kvkxnlub6u&st=lkldig26&raw=1" alt="Luxury interior shelving - curated décor"></div>
+    
+    <div class="grid-item"><img src="https://www.dropbox.com/scl/fi/pbywnxsopiyw67ag52bua/GTFY1569-natural.jpg?rlkey=tgn3yfm6gceldrklxnqo5fnyo&st=dsbau47b&raw=1" alt="Designer lampshade - artisanal home accessory"></div>
+    <div class="grid-item wide"><img src="https://www.dropbox.com/scl/fi/stay1k2oyaefmtdzdkxij/GTFY487.jpg?rlkey=d4d5vuyd5bwt7dd96tr0hm8l2&st=p2zith3m&raw=1" alt="Statement plant pots - modern interiors"></div>
+
+    <div class="grid-item wide"><img src="https://www.dropbox.com/scl/fi/ffa95jq1zraqebgm9omrt/GTFY813.jpg?rlkey=57qibc7m0doxonouqrkf824pb&st=xzxsx9o9&raw=1" alt="Unique clothes hooks - contemporary furniture design"></div>
+    <div class="grid-item"><img src="https://www.dropbox.com/scl/fi/1nlqe0w576itnwwv971z2/GTFY2151.png?rlkey=c8q9wb56d4nlzbesrxdl0yhhs&st=witllr5k&raw=1" alt="Minimalist kids furniture - designer lighting collection"></div>
+
+    <div class="grid-item big"><img src="https://www.dropbox.com/scl/fi/wv7em38gpx996rkd395dr/GTFY2022.jpg?rlkey=raq365idw87xv5bp105evniyb&st=pw9z6mer&raw=1" alt="Curated wall lights - high-end furniture"></div>
+    <div class="grid-item"><img src="https://www.dropbox.com/scl/fi/j800c6e919kexv9t9fxfe/GTFY1568-3.jpg?rlkey=yvtaffi6v6376gzxzyw4rra9f&st=3jj9s7t0&raw=1" alt="Luxury kids toys - boutique interiors"></div>
+    <div class="grid-item tall"><img src="https://www.dropbox.com/scl/fi/btb8hg1k38lyntdh1596v/GTFY1866-3.jpg?rlkey=knzqex4pehz95i16ggqbnsy5q&st=apcm77fz&raw=1" alt="Handcrafted hanging light - artisanal furniture"></div>
+    <div class="grid-item wide"><img src="https://www.dropbox.com/scl/fi/bpzibxw60csb5oez710h2/GTFY840.jpg?rlkey=ywpdwn1963u3aed3uaqfdzrqf&st=io4mzoad&raw=1" alt="Scandinavian mirrors - modern luxury décor"></div>
+    
+    <div class="grid-item"><img src="https://www.dropbox.com/scl/fi/m5qp8jl5ys9nbtkzeu0vo/GTFY832.jpg?rlkey=1y6yybksufhf04820qyvtpu66&st=jdrphvkg&raw=1" alt="Designer mirror - luxury interiors"></div>
+    <div class="grid-item wide"><img src="https://www.dropbox.com/scl/fi/y2z64vd3tweex7w6rysjk/GTFY817-2.jpg?rlkey=z2y3xmxiafyhol3cjrbzgkc8h&st=oees5p62&raw=1" alt="green walls - curated furniture piece"></div>
+  </section>
+
+  <footer>
+ <h2 style="font-size:18px; font-weight:normal; color:#686663;">
+      Curated collections of luxury furniture, designer lighting & unique home décor.
+    </h2>
+    <p>© 2025 OddThings.co</p>
+<p>Studio 13 Canal Warehouse Leicester Row Coventry CV1 4LH</p>
+<p><a href="mailto:hello@oddthings.co">Hello@OddThings.co</a></p>
+  </footer>
+</body>
+</html>
